@@ -30,5 +30,6 @@ public class Main {
             dashboard.setVisible(true);
 
         });
+        System.out.println("Student Management System is running...");
     }
 }

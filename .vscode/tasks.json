@@ -1,0 +1,30 @@
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Student Management System",
+            "type": "process",
+            "command": "D:\\apache-maven-3.10.2-bin\\apache-maven-3.10.2\\bin\\mvn.cmd",
+            "args": [
+                "clean",
+                "compile",
+                "exec:java",
+                "-Dexec.mainClass=com.student.Main"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true
+            }
+        }
+    ]
+}
